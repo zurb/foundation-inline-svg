@@ -25,9 +25,8 @@
     "url": "git://github.com/zurb/foundation-inline-svg.git"
   },
   "scripts": {
-    "run": "babel src -w -d dist",
-    "test": "karma start test/karma.conf.js"
+    "start": "gulp"
   },
-  "author": "Jordan Humphreys <jordan@zurb.com>",
+  "author": "Kevin Ball <kball@zurb.com>",
   "license": "MIT"
 }
