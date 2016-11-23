@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZURB Inline SVG | Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css" />
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Inline SVG Demo</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 columns">
+        <div class="callout large">
+          <h5>Yeti Inlined</h5>
+          <p>
+          <img src="img/yeti.svg" data-inline-svg></img>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+    <script src="../dist/standalone/foundation.inline-svg.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

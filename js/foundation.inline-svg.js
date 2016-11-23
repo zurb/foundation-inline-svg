@@ -1,5 +1,5 @@
 'use strict';
-var SVGInjector = require('node-modules/svg-injector/svg-injector');
+var SVGInjector = require('svg-injector/svg-injector');
 
 !function($) {
 
@@ -16,6 +16,7 @@ class InlineSVG {
    * @param {Object} options - Overrides to the default plugin settings.
    */
   constructor(element, options) {
+    console.log('constructing inlineSVG');
     this.$element = element;
     this.options = $.extend({}, InlineSVG.defaults, element.data(), options);
     this.className = '';
@@ -62,6 +63,6 @@ InlineSVG.defaults = {
 };
 
 // Window exports
-Foundation.plugin(Toggler, 'InlineSVG');
+Foundation.plugin(InlineSVG, 'InlineSVG');
 
 }(jQuery);

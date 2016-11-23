@@ -4,7 +4,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var SVGInjector = require('node-modules/svg-injector/svg-injector');
+var SVGInjector = require('svg-injector/svg-injector');
 
 !function ($) {
 
@@ -23,6 +23,7 @@ var SVGInjector = require('node-modules/svg-injector/svg-injector');
     function InlineSVG(element, options) {
       _classCallCheck(this, InlineSVG);
 
+      console.log('constructing inlineSVG');
       this.$element = element;
       this.options = $.extend({}, InlineSVG.defaults, element.data(), options);
       this.className = '';
@@ -79,5 +80,5 @@ var SVGInjector = require('node-modules/svg-injector/svg-injector');
   InlineSVG.defaults = {};
 
   // Window exports
-  Foundation.plugin(Toggler, 'InlineSVG');
+  Foundation.plugin(InlineSVG, 'InlineSVG');
 }(jQuery);
