@@ -25,6 +25,10 @@ e.g.
 
 The usage is super simple.  Just add a `data-inline-svg` attribute to any image tags that point to an SVG.  They will be replaced with the inline code from the SVG, while preserving attributes like classnames etc.
 
+```
+<img src="yeti.svg" data-inline-svg />
+```
+
 ### TODO:
 
 Todos include
