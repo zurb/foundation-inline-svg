@@ -24,7 +24,6 @@ var SVGInjector = require('svg-injector/svg-injector');
     function InlineSVG(element, options) {
       _classCallCheck(this, InlineSVG);
 
-      console.log('constructing inlineSVG');
       this.$element = element;
       this.options = $.extend({}, InlineSVG.defaults, element.data(), options);
       this.className = '';

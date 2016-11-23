@@ -16,7 +16,6 @@ class InlineSVG {
    * @param {Object} options - Overrides to the default plugin settings.
    */
   constructor(element, options) {
-    console.log('constructing inlineSVG');
     this.$element = element;
     this.options = $.extend({}, InlineSVG.defaults, element.data(), options);
     this.className = '';
